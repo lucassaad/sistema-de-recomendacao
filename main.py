@@ -132,6 +132,7 @@ def register_new_user(corpus: list, num_samples: int = 5) -> list[int]:
     
     user_ratings = [0] * len(corpus)
     
+    random.seed()
     sample_indices = random.sample(range(len(corpus)), num_samples)
     
     for idx in sample_indices:
