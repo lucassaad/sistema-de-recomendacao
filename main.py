@@ -206,20 +206,3 @@ def run_recommender_ui(corpus: list):
 if __name__ == '__main__':
     corpus, utility_matrix = setup_recommender('dataset.csv')
     run_recommender_ui(corpus)
-
-'''
-    data = load_dataset('test_dataset.csv')
-    vocabulary = build_vocabulary(data)
-    corpus = build_corpus(data, vocabulary)
-
-    document_frequencies = compute_document_frequencies(corpus, vocabulary)
-    tfidf(corpus, document_frequencies)
-
-    for document in corpus:
-        print(f"Track Name: {document.identifier}")
-        print(f"TFIDF SCORE: {document.tfidf_score}")
-        print()
-        print()
-        print()
-        print()
-'''
